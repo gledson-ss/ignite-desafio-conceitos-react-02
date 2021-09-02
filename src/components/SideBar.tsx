@@ -22,7 +22,7 @@ export function SideBar({ selectedGenreId, setSelectedGenreId }: propsSideBar) {
   }
 
   return (
-    <nav className="sidebar" style={{ border: '1px solid red' }}>
+    <nav className="sidebar" >
       <span>Watch<p>Me</p></span>
 
       <div className="buttons-container">

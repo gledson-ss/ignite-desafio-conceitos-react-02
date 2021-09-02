@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MovieCard } from "./MovieCard";
 import { api } from '../services/api'
 import '../styles/content.scss';
+import { Header } from "./Header";
 
 interface contentProps {
   selectedGenreId: number;
@@ -23,9 +24,7 @@ export function Content({ selectedGenreId }: contentProps) {
 
   return (
     <div className="container">
-      <header>
-        <span className="category">Categoria:<span> {selectedGenre.title}</span></span>
-      </header>
+      <Header title={selectedGenre.title} />
 
       <main>
         <div className="movies-list">
